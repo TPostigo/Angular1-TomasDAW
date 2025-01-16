@@ -1,0 +1,15 @@
+<h3>Get data from server via http</h3>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col" *ngFor="let cart of carts">
+    <div class="card">
+      <!-- Usamos la imagen del carrito -->
+      <img [src]="cart.image" class="card-img-top" alt="Imagen del producto">
+      <div class="card-body">
+        <!-- Mostramos el precio del producto -->
+        <h5 class="card-title">{{ cart.total }}</h5>
+        <p class="card-text">Precio: ${{ cart.total }}</p>
+      </div>
+    </div>
+  </div>
+</div>

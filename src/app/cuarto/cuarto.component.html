@@ -1,0 +1,15 @@
+<h3>Componente cuarto works!</h3>
+<h4>Directivas</h4>
+<p>El mensaje es {{mensaje}}</p>
+<label>Escribe tu mensaje personalizado</label>
+<input type="text" [(ngModel)]="mensaje">
+<div [ngStyle]="currentStyles">
+    Este es un texto de prueba
+</div>
+<ul>
+    <li *ngFor="let producto of productos">{{producto}}</li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let cliente of clientes">{{cliente.nombre}}</li>
+</ul>
